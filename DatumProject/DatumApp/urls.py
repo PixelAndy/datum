@@ -5,8 +5,8 @@ from rest_framework import routers
 
 router = routers.DefaultRouter()
 router.register('types', views.TypeViewSet)
-router.register('objects', views.ObjectViewSet)
-router.register('objects-geo', views.ObjectGeoViewSet)
+router.register('objects', views.ObjectViewSet, base_name='object')
+router.register('objects-geo', views.ObjectGeoViewSet, base_name='objects-geo')
 
 urlpatterns = [
     path('', include(router.urls)),
