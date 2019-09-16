@@ -1,0 +1,4 @@
+insert into DatumApp_type ( name, description) values ( 'education', 'Education' );
+insert into DatumApp_type ( name, description) values ( 'liesure', 'Liesure' );
+insert into DatumApp_type ( name, description) values ( 'sport', 'Sport' );
+insert into DatumApp_object ( name, description, type_id, geo_coord ) values ('school' , 'School description', 1, GeomFromText('POINT(1.01 2.02)', 4326));
