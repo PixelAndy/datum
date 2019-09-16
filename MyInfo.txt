@@ -1,0 +1,21 @@
+Проект выполнен на ПК с ОС Windows 10 x64
+Python v3.7.4 x64
+Используемая среда разработки PyCharm Community 2018.3.7 x64
+
+Понадобится:
+GDAL-3.0.1-cp37-cp37m-win_amd64.whl - для установки GDAL используя "pip install"
+spatialite.exe - для редактирования db.sqlite3 с поддержкой геокоординат
+mod_spatialite.dll - для корректной работы с sqlite3 через API
+OSGeo4W - геопространственные библиотеки
+
+действия:
+1. Установка всех нужных библиотек (SpatiaLite, OSGeo4W, полноценные dll вместо урезанных питоновских)
+2. Установка библиотек из req.txt (gdal - используя файл .whl)
+3. Создал проект DatumProject, и приложение DatumApp
+4. Настройка settings.py, установка зависимостей
+5. Создание моделей Table и Object в models.py
+6. Заполнение БД можно осуществить чистым кодом SQL либо django API (оба файла залил)
+(не использовал ASCII-кодировку в БД, не хватило времени изучить как подружить ее с Django)
+7. Настройка urls.py, views.py, serializers.py
+8. Применил действия manage.py migrate, manage.py makemigrations
+9. manage.py runserver
