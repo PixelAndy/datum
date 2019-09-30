@@ -15,7 +15,7 @@ OSGeo4W - геопространственные библиотеки
 4. Настройка settings.py, установка зависимостей
 5. Создание моделей Table и Object в models.py
 6. Заполнение БД можно осуществить чистым кодом SQL либо django API (оба файла залил)
-(не использовал ASCII-кодировку в БД, не хватило времени изучить как подружить ее с Django)
+(не использовал ASCII-кодировку в БД, надо узнать как подружить ее с Django)
 7. Настройка urls.py, views.py, serializers.py
 8. Применил действия manage.py migrate, manage.py makemigrations
 9. manage.py runserver
